@@ -129,10 +129,7 @@ class BucketSelectorExtAggregator : SiblingPipelineAggregator {
         }
 
         return BucketSelectorIndices(
-            name(),
-            parentBucketPath,
-            selectedBucketsIndex,
-            originalAgg.metadata
+            name(), parentBucketPath, selectedBucketsIndex, originalAgg.metadata
         )
     }
 
